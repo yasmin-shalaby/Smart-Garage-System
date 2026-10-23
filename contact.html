@@ -4,32 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Garage</title>
-    <link rel="icon" href="media/light_logo.png" />
+    <link rel="iconMyFormat" href="media/light_logo.png" />
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+    rel="stylesheet"
+    href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- /* ========================== NAV BAR ==================== */ -->
-    <nav>
-      <div>
-        <img src="media/logo.png" alt="icon" />
-      </div>
-      <div>
-        <ul>
-          <li><a href="index.html" target="_self">Home</a></li>
-          <li><a href="iot_system.html" target="_blank">IoT System</a></li>
-          <li><a href="contact.html" target="_blank">Contact</a></li>
-        </ul>
+        <nav
+      class="navMyFormat navbar navbar-expand-sm fixed-top "
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="media/logo.png"
+            width="40"
+            height="40"
+            class="rounded-circle"
+        /></a>
+        
+<button
+  class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#Navbar"
+  aria-controls="Navbar"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iot_system.html">IoT System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <header id="cont-header">
+    <header id="cont-header" style=" margin-top: 60px">
       <h1><span class="green">Smart</span> Garage</h1>
-      <h2>Contact with Team Members</h2>
+      <h2 style="color:white">Contact with Team Members</h2>
     </header>
 
     <!-- body code -->
     <div class="team">
-      <div class="card">
+      <div class="cardMyFirmat">
         <div>
           <img src="media/nagham.jpg" alt="Nagham" />
         </div>
@@ -45,7 +81,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="cardMyFirmat">
         <div>
           <img src="media/israa.png" alt="Esraa" />
         </div>
@@ -61,7 +97,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="cardMyFirmat">
         <div>
           <img src="media/yasmin.jpg" alt="Yasmin" />
         </div>
@@ -91,5 +127,7 @@
         <p>© 2026 Smart Automated Garage System. All Rights Reserved.</p>
       </div>
     </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+
   </body>
 </html>
