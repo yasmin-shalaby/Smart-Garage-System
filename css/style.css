@@ -271,3 +271,236 @@ h2 {
 .off:hover {
   background-color: #b02a37;
 }
+
+
+@media (max-width: 750px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team .cardMyFirmat {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  #main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #main h1 {
+    font-size: 60px;
+    padding: 10px;
+  }
+
+  #discription {
+    display: none;
+  }
+
+  #ex-btnMyFormat {
+    margin-left: 10px;
+  }
+}
+
+/* ========================== RESPONSIVE CARDS ==================== */
+
+@media (max-width: 750px) {
+  /* Main project cards */
+  .cardMyFirmat {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    height: auto;
+    min-height: 0;
+    margin: 20px 15px;
+    padding: 0;
+    border-radius: 16px;
+  }
+
+  .cardMyFirmat > div:first-child {
+    width: 100%;
+  }
+
+  .cardMyFirmat img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .cardMyFirmat .info {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .cardMyFirmat .info h2 {
+    font-size: 24px;
+    margin: 0 0 12px;
+  }
+
+  .cardMyFirmat .info p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* Contact page team cards */
+  .team {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .team .cardMyFirmat {
+    width: calc(100% - 30px);
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 20px;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+  }
+
+  .team .cardMyFirmat > div {
+    width: 100%;
+  }
+
+  .team .cardMyFirmat img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .team .cardMyFirmat p {
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 400px) {
+  .cardMyFirmat {
+    margin: 15px 10px;
+  }
+
+  .cardMyFirmat img {
+    height: 170px;
+  }
+
+  .cardMyFirmat .info {
+    padding: 15px;
+  }
+
+  .cardMyFirmat .info h2 {
+    font-size: 21px;
+  }
+
+  .team .cardMyFirmat {
+    width: calc(100% - 20px);
+  }
+}
+
+
+/* ========================== IoT SYSTEM RESPONSIVE ==================== */
+
+@media (max-width: 750px) {
+  #sys-header {
+    padding: 30px 20px;
+  }
+
+  #sys-header h1 {
+    font-size: 32px;
+  }
+
+  #sys-header p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* System diagram */
+  body > img {
+    width: 100%;
+    padding: 15px !important;
+    object-fit: contain;
+  }
+
+  /* System cards */
+  #sys-cardMyFirmat {
+    padding: 10px 0;
+  }
+
+  #sys-cardMyFirmat .cardMyFirmat {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    height: auto;
+    min-height: 0;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  #sys-cardMyFirmat-start {
+    width: 100%;
+    padding: 0;
+  }
+
+  #sys-cardMyFirmat .cardMyFirmat h2 {
+    font-size: 23px;
+    margin: 0;
+  }
+
+  #sys-cardMyFirmat .cardMyFirmat p {
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+
+  /* Control buttons */
+  #sys-cardMyFirmat .control {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #sys-cardMyFirmat .control form {
+    width: 100%;
+    gap: 12px;
+  }
+
+  #sys-cardMyFirmat .control input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  #sys-header h1 {
+    font-size: 28px;
+  }
+
+  #sys-cardMyFirmat .cardMyFirmat {
+    margin: 12px 10px;
+    padding: 15px;
+  }
+
+  #sys-cardMyFirmat .cardMyFirmat h2 {
+    font-size: 21px;
+  }
+}
+
