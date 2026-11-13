@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Garage</title>
     <link rel="iconMyFormat" href="media/light_logo.png" />
+
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Bootstrap CSS -->
     <link
-    rel="stylesheet"
-    href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <!-- /* ========================== NAV BAR ==================== */ -->
-       <nav
-      class="navMyFormat navbar navbar-expand-sm fixed-top "
+    <!-- NAV BAR -->
+    <nav
+      class="navMyFormat navbar navbar-expand-sm fixed-top"
       data-bs-theme="dark"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
+        <a class="navbar-brand" href="#">
+          <img
             src="media/logo.png"
             width="40"
             height="40"
             class="rounded-circle"
-        /></a>
-        
+          />
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -57,8 +62,10 @@
         </div>
       </div>
     </nav>
-    <header id="sys-header" style=" margin-top: 60px">
+
+    <header id="sys-header" style="margin-top: 60px">
       <h1><span class="green">Smart</span> Garage</h1>
+
       <p>
         Our Smart Garage System uses embedded technology and IoT concepts to
         improve parking management. It combines sensors, a microcontroller,
@@ -69,12 +76,21 @@
 
       <p></p>
     </header>
-    <img src="media/diagram.jpg" alt="" width="90%" class="d-block mx-auto" style="padding-top: 30px;" />
+
+    <img
+      src="media/diagram.jpg"
+      alt=""
+      width="90%"
+      class="d-block mx-auto"
+      style="padding-top: 30px"
+    />
+
     <div id="sys-cardMyFirmat">
       <div class="cardMyFirmat">
         <div id="sys-cardMyFirmat-start">
           <h2>Sytem Operation</h2>
         </div>
+
         <p>
           Parking garages often face problems such as difficulty finding
           available parking spaces, long waiting times at entrances, and
@@ -89,33 +105,42 @@
         <div id="sys-cardMyFirmat-start">
           <h2>Main Components</h2>
         </div>
+
         <p>
           Intel Galileo Gen 2 IR Sensors SG90 Servo Motors (2) 16×2 LCD with I2C
           Module Parking Space LEDs Entrance Status LEDs (Red & Green) Resistors
           Breadboard Jumper Wires Ethernet Interface (Built-in) MQTT Protoco
         </p>
       </div>
-          
+
       <div class="cardMyFirmat">
         <div id="sys-cardMyFirmat-start">
           <h2>Controle</h2>
         </div>
 
-        <div class="control">
+        <div class="acssess">
+          <button onclick="puzzel()" class="on" id="sys-control" style="margin: 20px;">
+            Access IoT Device
+          </button>
+        </div>
+        
+        <!-- <div class="control">
           <form action="">
             <input type="submit" value="on" class="on" />
             <input type="submit" value="off" class="off" />
           </form>
-        </div>
+        </div> -->
+       <div id="reset"></div>
       </div>
+    </div>
 
-
-    <!-- /* ========================== FOOTER ==================== */ -->
+    <!-- FOOTER -->
     <footer>
       <div>
         <p id="contact">Contact Us</p>
         <a href="#">smartgrage@gmail.com</a>
       </div>
+
       <div>
         <p>Smart Automated Garage System</p>
         <p>CSE411 – Embedded Systems & IoT Project</p>
@@ -123,7 +148,8 @@
         <p>© 2026 Smart Automated Garage System. All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
